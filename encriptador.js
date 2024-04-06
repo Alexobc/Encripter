@@ -78,7 +78,14 @@ function desencriptar() {
     const textoOriginal = desencriptarTexto(textoTransformado);
     document.getElementById('resultado').value = textoOriginal;
     document.getElementById('textoOriginal').value = null;
+
+     document.getElementById("img").style.display = 'none';
+    document.getElementById("msj").style.display = 'none';
+    document.getElementById("parrafo").style.display = 'none';
+
 }
+
+
 // funcion copiar y borrar despues de
 function copy() {
     var copyText = document.getElementById("resultado");
