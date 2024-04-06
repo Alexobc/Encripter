@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encriptador.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <img class="logo" src="logos/Logo.svg" alt="logo alura">
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <textarea class="textoOriginal" type="text" id="textoOriginal" rows="40" cols="50"
+                placeholder="Introduce el texto aqui"></textarea>
+
+            <div>
+
+                <h6 class="advertencia">
+                    <img src="logos/Frame 1.svg" alt="" style="float: left;">Solo letras minúsculas y sin acentos</h6>
+
+            </div>
+
+
+            <div class="btns">
+
+                <button class="btn-encript" onclick="transformarTexto()">Encriptar</button>
+                <button class="btn-desencript" onclick="desencriptar()">Desencriptar</button>
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+            <div class="contenedor">
+
+                <textarea class="resultado" id="resultado" cols="20" rows="20" readonly></textarea>
+
+    
+                    <button class="copiar"  id="copiar" onclick="copy()"> Copiar</button>
+    
+            </div>
+
+
+
+
+            <div id="elementos" class="elementos">
+
+                <img class="img" id="img" src="/logos/Muñeco.svg" alt="doll composition" />
+
+                <h2 class="msj"  id="msj">Ningún mensaje fue encontrado</h2>
+
+                <p class="parrafo"  id="parrafo"> Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            </div>
+
+
+        </section>
+        
+    </main>
+    
+    
+    <footer class="footer"   id="footer">
+    
+        <p class="copyright">&copy;Alejandro Obregon 2024 
+          
+        </footer>
+    
+
+
+    <script src="encriptador.js"></script>
+
+
+
+</body>
+
+</html>
